@@ -30,7 +30,7 @@ app.get('/', async (req, res) => {
   console.log("Start");
   const result = await pool.query('SELECT current_database()');
   console.log("End");
-  res.send(`Connected to database: ${result.rows[0].current_database}`);
+  res.send(`Connected to database : ${result.rows[0].current_database}`);
 });
 
 
